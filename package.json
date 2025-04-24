@@ -1,0 +1,15 @@
+{
+  "name": "ukdsafe",
+  "version": "1.0.0",
+  "description": "Aplikasi Safe Exam untuk Ujian Kompetensi Daerah Kota Malang 2025",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ichwanap_",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.2.1"
+  }
+}
