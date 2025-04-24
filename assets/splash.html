@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Splash Screen</title>
   <style>
     body {
       margin: 0;
@@ -17,13 +17,6 @@
     h1 {
       margin-bottom: 20px;
     }
-    input {
-      padding: 10px;
-      margin: 5px 0;
-      width: 200px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
     button {
       padding: 10px 20px;
       border: none;
@@ -32,36 +25,19 @@
       font-size: 16px;
       cursor: pointer;
       border-radius: 5px;
-      margin-top: 10px;
     }
     button:hover {
       background-color: #0056b3;
     }
-    #error {
-      color: red;
-      margin-top: 10px;
-      display: none;
-    }
   </style>
 </head>
 <body>
-  <h1>Login</h1>
-  <input type="text" id="username" placeholder="Username" />
-  <input type="password" id="password" placeholder="Password" />
-  <button onclick="handleLogin()">Login</button>
-  <div id="error">Username atau password salah!</div>
+  <h1>Selamat Datang</h1>
+  <button onclick="startApp()">Mulai</button>
 
   <script>
-    function handleLogin() {
-      const username = document.getElementById('username').value.trim();
-      const password = document.getElementById('password').value.trim();
-      const errorBox = document.getElementById('error');
-
-      if (username === 'siswa' && password === '12345') {
-        window.electronAPI.login(); // Mengirim event login-success ke main process
-      } else {
-        errorBox.style.display = 'block';
-      }
+    function startApp() {
+      window.electronAPI.login(); // Mengirim event login-success ke main process
     }
   </script>
 </body>

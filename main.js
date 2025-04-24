@@ -64,11 +64,11 @@ app.whenReady().then(() => {
   createSplash();
 });
 
-// Handle login dari splash
+// Handle tombol "Mulai" dari splash
 ipcMain.on('login-success', () => {
-  console.log('Login berhasil, membuka main window...');
+  console.log('Tombol Mulai diklik, membuka main window...');
   splash.close(); // Tutup splash screen
-  createMainWindow(); // Buat dan tampilkan mainWindow setelah login berhasil
+  createMainWindow(); // Buat dan tampilkan mainWindow
 });
 
 app.on('window-all-closed', () => {
