@@ -1,0 +1,136 @@
+body {
+  background: #6e28d9;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 300px;
+  width: 400px;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6e28d9, #610281);
+}
+
+.container div {
+  position: absolute;
+  border-radius: 50%;
+  animation: gradient 4s infinite;
+}
+
+@keyframes gradient {
+  70% {
+    transform: scale(1.2) translate(50px);
+  }
+}
+
+.container div:nth-child(1) {
+  height: 50%;
+  width: 50%;
+  background-color: #FF2D55;
+  left: -20%;
+  top: -10%;
+}
+
+.container div:nth-child(2) {
+  height: 60%;
+  width: 60%;
+  background-color: #4CD964
+
+;
+  bottom: -12%;
+  right: -12%;
+  animation-delay: 0.8s;
+}
+
+.container div:nth-child(3) {
+  height: 65%;
+  width: 80%;
+  background-color: #16199b;
+  bottom: -15%;
+  right: 80%;
+  animation-delay: 0.3s;
+}
+
+.container div:nth-child(4) {
+  height: 50%;
+  width: 50%;
+  background-color: #1babe9;
+  left: 40%;
+  top: -10%;
+  animation-delay: 1.2s;
+}
+
+.container::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(80px);
+}
+
+img {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  margin-bottom: 140px;
+}
+h1 {
+  position: absolute;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+
+h3 {
+  position: absolute;
+  margin-top: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+button {
+  position: absolute;
+  margin-top: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  background-color: #FF2D55;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #FF2D55;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ff2db5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  margin-top: 230px;
+  font-size: smaller;
+}
