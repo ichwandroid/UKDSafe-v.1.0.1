@@ -22,6 +22,14 @@ function createSplash() {
   splash.webContents.on('did-fail-load', () => {
     console.error('Failed to load splash screen');
   });
+
+  globalShortcut.register('Control+Shift+Q', () => {
+    app.quit();
+  });
+
+  globalShortcut.register('Control+Shift+R', () => {
+    splash.webContents.reload();
+  });
 }
 
 function createMainWindow() {

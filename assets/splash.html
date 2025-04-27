@@ -17,12 +17,32 @@
     <h1>Ujian Kompetensi Dasar</h1>
     <h3>SD Anak Saleh 2025</h3>
     <button onclick="startApp()">Mulai</button>
+    <div id="status" class="status"></div>
     <a>copyright &copy; 2025 opsdanaksaleh</a>
 
     <script>
       function startApp() {
         window.electronAPI.login(); // Mengirim event login-success ke main process
       }
+
+      // Fungsi untuk memperbarui status online/offline
+      function updateStatus() {
+        const statusElement = document.getElementById("status");
+        if (navigator.onLine) {
+          statusElement.textContent = "Status: Online";
+          statusElement.className = "status online";
+        } else {
+          statusElement.textContent = "Status: Offline";
+          statusElement.className = "status offline";
+        }
+      }
+
+      // Event listener untuk perubahan status koneksi
+      window.addEventListener("online", updateStatus);
+      window.addEventListener("offline", updateStatus);
+
+      // Set status awal
+      updateStatus();
     </script>
   </body>
 </html>

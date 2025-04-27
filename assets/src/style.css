@@ -88,21 +88,21 @@ img {
 }
 h1 {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
 }
 
 h3 {
   position: absolute;
-  margin-top: 60px;
+  margin-top: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
 }
 
 button {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 170px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   background-color: #FF2D55;
@@ -131,6 +131,23 @@ a {
   position: absolute;
   text-decoration: none;
   color: white;
-  margin-top: 230px;
-  font-size: smaller;
+  margin-top: 250px;
+  font-size: x-small;
+}
+
+.status {
+  margin-top: 90px;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+.online {
+  background-color: #28a745;
+}
+.offline {
+  background-color: #dc3545;
 }
