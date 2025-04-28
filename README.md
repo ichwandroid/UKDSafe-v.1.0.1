@@ -24,11 +24,14 @@ UKDSafe adalah aplikasi desktop berbasis Electron yang dirancang untuk mendukung
 
 ## Cara Menjalankan Aplikasi
 
-### 1. Clone Repository
+### Clone Repository
 Clone repository ini ke komputer Anda:
 ```bash
 git clone <URL_REPOSITORY>
 cd UKDSafe
+###
+
+### Install & Run
 npm install
 npm start
 npm run build
@@ -53,7 +56,4 @@ Kontributor
 Nama Anda - Pengembang Utama
 SD Anak Saleh - Pemilik Proyek
 
-
-### Penyesuaian
-- Ganti `<URL_REPOSITORY>` dengan URL repository Anda.
-- Tambahkan informasi tambahan seperti logo, deskripsi fitur lainnya, atau panduan penggunaan jika diperlukan.
+###
