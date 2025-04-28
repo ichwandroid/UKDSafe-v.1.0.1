@@ -68,7 +68,17 @@ function createMainWindow() {
   });
 }
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
+  // Bersihkan cache sebelum membuka aplikasi
+  try {
+    const session = require('electron').session;
+    await session.defaultSession.clearCache();
+    console.log('Cache berhasil dibersihkan.');
+  } catch (error) {
+    console.error('Gagal membersihkan cache:', error);
+  }
+
+  // Buat splash screen
   createSplash();
 });
 
