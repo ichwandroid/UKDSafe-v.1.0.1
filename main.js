@@ -46,7 +46,7 @@ function createMainWindow() {
     }
   });
 
-  mainWindow.loadURL("https://youtube.com");
+  mainWindow.loadURL("https://ukdkotamalang.cbt.siap.id/auth/login");
 
   // Cegah navigasi keluar
   mainWindow.webContents.on('will-navigate', (e, url) => {
