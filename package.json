@@ -5,11 +5,34 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ichwanap_",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^35.2.1"
+    "electron": "^35.2.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.ukdsafe.app",
+    "productName": "UKDSafe",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/.bin",
+      "!**/*.map"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/src/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/src/icon.icns"
+    }
   }
 }
